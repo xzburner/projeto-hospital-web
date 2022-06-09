@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatTableModule } from '@angular/material/table';
 
 import { ClinicaRoutingModule } from './clinica-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -15,7 +16,8 @@ import { PacientesComponent } from './pacientes/pacientes.component';
   ],
   imports: [
     CommonModule,
-    ClinicaRoutingModule
+    ClinicaRoutingModule,
+    MatTableModule
   ]
 })
 export class ClinicaModule { }

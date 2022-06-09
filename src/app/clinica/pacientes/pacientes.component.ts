@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PacientesComponent implements OnInit {
 
+  pacientes: any[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
