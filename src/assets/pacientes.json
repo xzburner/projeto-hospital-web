@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "nome": "Junio",
+    "cpf": "1234",
+    "dtCriacao": "Hoje",
+    "telefone": "1234",
+    "dtNascimento": "02-07-1995",
+    "endereco": "Rua 1"
+  }
+]

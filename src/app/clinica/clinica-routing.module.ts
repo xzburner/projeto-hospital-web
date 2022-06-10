@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MedicosComponent } from './medicos/medicos.component';
 
-import { HomeComponent } from './home/home.component';
 import { PacientesComponent } from './pacientes/pacientes.component';
 
 
