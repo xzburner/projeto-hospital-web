@@ -7,12 +7,14 @@ import { AppMaterialModule } from './app-material/app-material.module';
 
 @NgModule({
   declarations: [
-    ErrorDialogComponent
+    ErrorDialogComponent,
+
   ],
   imports: [
     CommonModule,
-    AppMaterialModule
+    AppMaterialModule,
   ],
-  exports: [ErrorDialogComponent]
+  exports: [ErrorDialogComponent,
+  ]
 })
 export class UtilsModule { }

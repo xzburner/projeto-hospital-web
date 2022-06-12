@@ -6,7 +6,9 @@ import { AppMaterialModule } from '../_utils/app-material/app-material.module';
 import { ClinicaRoutingModule } from './clinica-routing.module';
 import { HomeComponent } from './home/home.component';
 import { MedicosComponent } from './medicos/medicos.component';
-import { PacientesComponent } from './pacientes/pacientes.component';
+import { CadastroPacienteComponent } from './pacientes/cadastro-paciente/cadastro-paciente.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ListaPacientesComponent } from './pacientes/lista-pacientes/lista-pacientes.component';
 
 
 
@@ -15,13 +17,15 @@ import { PacientesComponent } from './pacientes/pacientes.component';
   declarations: [
     MedicosComponent,
     HomeComponent,
-    PacientesComponent
+    CadastroPacienteComponent,
+    ListaPacientesComponent
   ],
   imports: [
     CommonModule,
     ClinicaRoutingModule,
     AppMaterialModule,
-    UtilsModule
+    UtilsModule,
+    ReactiveFormsModule
   ]
 })
 export class ClinicaModule { }

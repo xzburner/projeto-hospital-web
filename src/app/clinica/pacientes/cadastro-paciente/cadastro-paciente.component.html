@@ -1,0 +1,36 @@
+<mat-card>
+
+  <mat-toolbar color="primary">
+    Cadastrar Paciente
+  </mat-toolbar>
+
+  <mat-card-content>
+    <form [formGroup]="form" class="min-width">
+      <mat-form-field class="full-width" >
+        <input matInput placeholder="Nome" formControlName="nome" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="CPF" formControlName="cpf" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Telefone" formControlName="telefone" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Data de Nascimento" formControlName="dtNascimento" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Endereço" formControlName="endereco" required>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="cadastroPaciente()">Salvar</button>
+    <button mat-raised-button (click)="voltaPagina()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
+

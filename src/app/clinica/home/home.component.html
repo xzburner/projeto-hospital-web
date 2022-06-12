@@ -1,1 +1,34 @@
-<p>home works!</p>
+<mat-card class="card-externo">
+  <mat-toolbar color="primary">
+    Controle de Pacientes e Médicos
+  </mat-toolbar>
+  <mat-card-content>
+    <div class="container-fluid grid">
+
+      <mat-card class="card-interno">
+        <mat-toolbar>
+          Pacientes
+        </mat-toolbar>
+
+          <img class="image" src="/assets/paciente.png" alt="">
+
+        <mat-card-actions>
+          <button style="width: 100%;" color="primary" mat-raised-button (click)="gerenciaPaciente()">Gerenciar</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="card-interno">
+        <mat-toolbar color="">
+          Médicos
+        </mat-toolbar>
+        <img class="image" src="/assets/medico.png" alt="">
+        <mat-card-actions>
+          <button style="width: 100%;" color="primary" mat-raised-button>Gerenciar</button>
+        </mat-card-actions>
+      </mat-card>
+
+
+    </div>
+  </mat-card-content>
+</mat-card>
+

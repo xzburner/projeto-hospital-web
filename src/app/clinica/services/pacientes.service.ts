@@ -8,7 +8,7 @@ import { first, tap, delay } from 'rxjs';
 })
 export class PacientesService {
 
-  private readonly API = '/assets/pacientes.json'
+  private readonly API = 'api/pacientes';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,8 +16,14 @@ export class PacientesService {
     return this.httpClient.get<Paciente[]>(this.API)
       .pipe(
         first(),
-        delay(3000),
         tap(pacientes => console.log(pacientes))
+      );
+  }
+
+  cadastroPaciente(pacientes: Paciente) {
+    return this.httpClient.post<Paciente>(this.API, pacientes)
+      .pipe(
+        first()
       );
   }
 }
