@@ -43,10 +43,6 @@ export class PacientesService {
     return this.httpClient.put<void>(url, paciente);
  }
 
-// atualizaPaciente(body: Paciente): Observable<any> {
-//   return this.httpClient.put(`${this.API}/produtos`, body, { observe: "response" });
-// }
-
 }
 
 

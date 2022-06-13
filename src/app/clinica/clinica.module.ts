@@ -11,8 +11,9 @@ import { CadastraPacienteComponent } from './pacientes/cadastra-paciente/cadastr
 import { ListaPacientesComponent } from './pacientes/lista-pacientes/lista-pacientes.component';
 import { ModalDeletaPacienteComponent } from './pacientes/modal-deleta-paciente/modal-deleta-paciente.component';
 import { EditaPacienteComponent } from './pacientes/edita-paciente/edita-paciente.component';
-
-
+import { FooterComponent } from './templates/footer/footer.component';
+import { NavComponent } from './templates/nav/nav.component';
+import { HeaderComponent } from './templates/header/header.component';
 
 
 @NgModule({
@@ -23,15 +24,23 @@ import { EditaPacienteComponent } from './pacientes/edita-paciente/edita-pacient
     ListaPacientesComponent,
     ModalDeletaPacienteComponent,
     EditaPacienteComponent,
-    CadastraPacienteComponent
+    CadastraPacienteComponent,
+    FooterComponent,
+    NavComponent,
+    HeaderComponent
   ],
   imports: [
-    CommonModule,
+
+CommonModule,
     ClinicaRoutingModule,
     AppMaterialModule,
-    UtilsModule,
     ReactiveFormsModule,
     FormsModule
+  ],
+  exports: [
+    FooterComponent,
+    NavComponent,
+    HeaderComponent
   ]
 })
 export class ClinicaModule { }
