@@ -1,5 +1,5 @@
 export interface Paciente {
-      id: number;
+      id: string;
       nome: string;
       cpf: string;
       dtCriacao: string;

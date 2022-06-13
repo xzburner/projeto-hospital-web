@@ -1,0 +1,36 @@
+<mat-card>
+
+  <mat-toolbar color="primary">
+    Alterar Paciente
+  </mat-toolbar>
+
+  <mat-card-content>
+    <form  class="min-width" form="formGroup">
+      <mat-form-field class="full-width" >
+        <input matInput [(ngModel)]="paciente.nome" name="nome"  placeholder="Nome"  required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="paciente.cpf"  name="cpf" placeholder="CPF"  required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="paciente.telefone" name="telefone"  placeholder="Telefone"  required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="paciente.dtNascimento" name="dtNasciemento" placeholder="Data de Nascimento"  required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="paciente.endereco" name="endereco"  placeholder="Endereço" required>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="atualizaPaciente()">Alterar</button>
+    <button mat-raised-button (click)="voltaPagina()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
+

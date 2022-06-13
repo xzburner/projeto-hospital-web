@@ -3,10 +3,10 @@
   <mat-toolbar color="primary" routerLinkActive>
     Pacientes Cadastrados
     <button mat-flat-button class="rigtbutton" (click)="voltaPagina()">Voltar</button>
-    <button mat-raised-button [routerLink]="['cadastro']" routerLinkActive="router-link-active"  >Adicionar</button>
+    <button mat-raised-button [routerLink]="['cadastro']" routerLinkActive="router-link-active">Adicionar</button>
   </mat-toolbar>
 
-  <div *ngIf="show">
+  <div *ngIf="pacientes">
     <table mat-table [dataSource]="pacientes" class="mat-elevation-z8">
 
       <!-- Coluna nome -->
@@ -48,13 +48,13 @@
       <!-- Coluna de ações -->
       <ng-container matColumnDef="acoes">
 				<th class="colum" mat-header-cell *matHeaderCellDef> Ações </th>
-				<td mat-cell *matCellDef="let agendamento">
-					<button mat-icon-button color="primary" >
+				<td mat-cell *matCellDef="let paciente">
+					<button mat-icon-button color="primary" routerLink="editar/{{paciente.id}}">
 						<mat-icon>edit</mat-icon>
 					</button>
 
 					<button mat-icon-button color="warn">
-						<mat-icon>delete</mat-icon>
+						<mat-icon (click)="abrirModalDeletar(paciente.id)">delete</mat-icon>
 					</button>
 				</td>
 			</ng-container>
